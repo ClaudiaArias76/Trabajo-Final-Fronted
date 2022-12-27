@@ -1,0 +1,344 @@
+@import url('./normalize.css');
+@font-face{
+    font-family: get_schwifty;
+    src: url('get_schwifty.ttf') format("truetype");
+}
+
+body{
+    background-image:  url('./images/606020\ \(1\).jpg');
+    background-size: contain;
+    min-height:100vh;
+}
+header {
+    display: flex;
+    justify-content:space-between;
+    height: 15rem;
+    align-items: center;
+}
+header h1{
+   font-family: get_schwifty; 
+   font-size: 70px;
+   font-weight: bold;
+   font-stretch:ultra-expanded;
+   color: #24325FFF;
+   width: 770px;
+   height: 200px;
+   padding: 0rem 0rem 0rem 6rem;
+   text-align: center;
+   position: fixed;
+   right: 500px;
+   z-index:0;
+}
+header .Log{
+    position: relative;
+}
+
+header .Data{
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 500px;  
+    position:relative;
+    right: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    color:#24325F99;
+}
+header .Data button {
+    background-color:  rgba(222, 245, 176, 0.140);
+    border: none;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 4px 2px 2px 8px;
+    color:#584f5f;
+    overflow: hidden;
+    
+}
+.Data button:hover{
+    background-color:#f8ef8e;
+}
+.ov-btn-slide-top {
+    background: #f8ef8e;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+.ov-btn-slide-top {
+    color: #f8ef8e;
+  }
+  .ov-btn-slide-top::after {
+    content: "";
+    background: #f8ef8e;
+    position: absolute;
+    z-index: -1;
+    padding: 10px 15px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .ov-btn-slide-top:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+ 
+.button span {
+	position: relative;
+	z-index: 0;
+	transition: .1s ease all;
+}
+img {
+    width: 90px;
+    height: 110px;
+}
+main .amount {
+    background-color:  rgba(222, 245, 176, 0.100);
+    text-transform:uppercase;
+    text-align:left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1px;
+    color:#584f5f;
+    width: -100%;
+    height: 70%;
+    margin: 4px;
+}
+header #point {
+    font-family: 'Oswald', sans-serif;
+    color:#24325F99;
+}
+main button {
+    font-size:5px;
+    border-radius: 3px;
+    padding: 2px 2px 2px 40px;
+    height: 15%;
+    color: #24325F99;
+    text-decoration:wavy;
+}
+main .contain-cards{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:initial;
+    margin: 1.5rem;
+    min-height: 200vh;
+}
+main .contain-cards .card {
+    height: 20rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 10%;
+    background-color: #f9fab399;
+    border-radius: 6px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+    margin: 5rem;
+    padding: 18px
+}
+main .contain-cards .card .contain-info {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    height:100%;
+    width: -35%;
+    overflow-wrap: var();
+}
+main .contain-cards .contain-info p{
+    font-family: 'Oswald', sans-serif ;
+    color:#24325FFF;
+    font-size: 0.8rem;
+    white-space: 0.5rem;
+}
+main .page-group{
+    background-color:rgba(250, 136, 94, 0.05);
+    border: 15px #06000a;
+    border-radius: 4px;
+    padding: 12px 6px 4px 1px;
+    margin:40px;
+    color:  #24325F99;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+main .page-group button {
+    background-color:#A6EEE6FF;
+    font-size: 0.8rem;
+    font: weight 500px;
+    border-radius: 5px;
+    color: #040007;
+    padding: 4px 8px;
+    border: solid 2px #130222;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+    overflow: hidden;
+}
+.page-group button:hover{
+    background-color: #f8deed;
+}
+footer .copy {
+    color: rgb(44, 99, 121);
+    z-index: 9999;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    font-size: 20px;
+    background-color:rgb(255, 151, 103,);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 3rem;
+}
+
+.desactived {
+    background-color: rgb(76, 77, 76,);
+    color: rgba(0, 0, 0, 0.394);
+}
+
+.desactived:hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+
+/*@media (min-width: 768px) {
+    header {
+        height: 4.5rem;
+    }
+    header .Log img{
+        width: 40px;
+        height: 50px;
+    }
+    header h1 {
+        display: flex;
+        height: 15%;
+        text-align:center;
+        font-size: 30px;
+        width: 30%;
+        position: fixed;
+        right: 300px;
+        z-index:9999;
+    }
+    header .Data {
+        z-index:0;
+        position:static;
+        height: 5rem;
+    }
+    header .Data button {
+        font-size: 1rem;
+    }
+    .ov-btn-slide-top {
+        background:none
+      }
+    header #point {
+        font-size: 2.2 rem;
+    }
+    main .contain-cards{
+        display:flex;
+        align-items:initial;
+        margin:0;
+        min-height: 50vh;
+    }
+    main .contain-cards .card {
+        height: 25rem;
+    }
+    main .contain-cards img {
+        width: 100px;
+        height: 130px;
+    }
+    main .contain-cards .card .contain-info {
+        font-size: 0.7rem;
+    }
+
+    main .page-group button {
+        font-size: 1rem;
+    }
+    main .page-group .desactived {
+        background-color: rgba(144, 148, 144, 0.678);
+        color: rgba(0, 0, 0, 0.394);
+    }
+    main .page-group .desactived:hover {
+        cursor: default;
+        transform: scale(1);
+   }
+
+}
+@media (min-width: 1024px) {
+
+    body {
+        background-image: url('./images/606020\ \(1\).jpg');
+        background-size: contain;
+    }
+    header .Log img{
+        width: 50px;
+        height: 70px;
+    }
+    header h1 {
+        display: flex;
+        height: 16%;
+    }
+    header .Data {
+        z-index:0;
+        position:static;
+        height: 5rem; 
+    }
+    header .Data button:hover {
+        cursor: pointer;
+        transform: scale(1.2)
+    }
+
+    header #point:hover {
+        text-shadow:#24325F99;
+    }
+
+    main .contain-cards {
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main .contain-cards .card {
+        width: 30rem;
+        margin:2px 6px 1px 3px;
+        padding: 0px;
+        height: 20rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+    main .contain-cards .card:hover {
+        box-shadow: inset 0px 0px 30px 150px #f8ef8e;
+        background-color:#A6EEE6FF;
+        transform: scale(1.1);
+    }
+
+    main .contain-cards .card .contain-info {
+        font-size: 1rem;
+    }
+
+    main .page-group:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    main .page-group .desactived {
+         background-color: rgb(76, 77, 76,);
+    color: rgba(0, 0, 0, 0.394);
+    }
+    main .page-group .desactived:hover {
+    cursor: default;
+    transform: scale(1);
+    }
+}
+
+@media (min-width: 1440px) {  
+    header #link-home {
+        font-size: 3rem;
+    }
+}
